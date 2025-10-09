@@ -1,0 +1,234 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+/*
+Classes CSS pour l'ensemble des vues de l'application
+@author Jonathan Carrière
+ */
+body
+{
+    background-color: black;
+    padding-top: 4em;
+}
+
+footer
+{
+    margin-top: 3em;
+}
+
+label
+{
+    font-size: 16px;
+}
+
+.btn, .modal-body>p, .me-auto
+{
+    font-size: 16px;
+}
+
+form {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-width {
+    width: 260px;
+    margin: auto;
+}
+
+.btn-width2 {
+    width: 260px;
+    margin: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    padding: 24px;
+}
+
+.custom-checkbox-margin {
+    margin-left: 5px;
+}
+
+.custom-font-size {
+    font-size: 22px;
+}
+
+.custom-font-size2 {
+    font-size: 16px;
+}
+
+.custom-font-size3 {
+    font-size: 20px;
+}
+
+.custom-height {
+    height: 70px;
+}
+
+.custom-image-height {
+    height: 385px;
+}
+
+.custom-link, .custom-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.custom-width {
+    width: fit-content;
+    margin: auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.justify {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.justify2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.fc-toolbar-title{
+    text-align: center;
+}
+
+#erreurajouthoraire {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+// Source : https://stackoverflow.com/questions/28864718/how-to-change-the-color-of-the-stock-pagination-that-come-with-laravel
+// Source : https://www.w3schools.com/cssref/pr_pos_z-index.php
+.pagination > li > a, .pagination > li > span {
+    color: black;
+    z-index: 0;
+}
+
+// Source : https://stackoverflow.com/questions/28864718/how-to-change-the-color-of-the-stock-pagination-that-come-with-laravel
+// Source : https://www.w3schools.com/cssref/pr_pos_z-index.php
+.pagination > .active > a, .pagination > .active > span {
+    background-color: black;
+    border-color: white;
+    z-index: 0;
+}
+
+// Source : https://icons.getbootstrap.com/icons/caret-down-square-fill/
+.accordion-button.bg-dark.text-light::after {
+    background-image: url("/images/icons/caret-down-square-fill.svg");
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+// Source : https://icons.getbootstrap.com/icons/caret-down-square-fill/
+.accordion-button.bg-dark.text-light.collapsed::after {
+    background-image: url("/images/icons/caret-down-square-fill.svg");
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+@media (max-width:244px) {
+    .custom-width {
+        width: 78px;
+    }
+}
+
+@media (max-width:372px) {
+    #messageToast {
+        width: 174px;
+    }
+}
+
+@media (min-width:372px) and (max-width:576px) {
+    #messageToast {
+        width: 204px;
+    }
+}
+
+@media (max-width:276px) {
+    .btn-width {
+        width: 156px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .btn-width {
+        width: 156px;
+        height: 39.59px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .btn-width {
+        width: 216px;
+    }
+}
+
+@media (max-width:176px) {
+    .btn-width2 {
+        width: 78px;
+    }
+}
+
+@media (min-width:176px) and (max-width:276px) {
+    .btn-width2 {
+        width: 156px;
+    }
+}
+
+@media (max-width:352px) {
+    .btn-width3 {
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+        margin: auto;
+    }
+}
+
+@media (min-width:352px) and (max-width:440px) {
+    .btn-width3 {
+        width: 80px;
+        margin: auto;
+    }
+}
+
+@media (min-width:440px) and (max-width:500px) {
+    .btn-width3 {
+        width: 100px;
+        margin: auto;
+    }
+}
+
+@media (min-width:1200px) {
+    .btn-width3 {
+        width: 220px;
+        margin: auto;
+    }
+}
+
+@media (max-width:576px) {
+    .pagination {
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+    }
+    a.page-link, li.page-item.disabled, span.page-link {
+        width: 100px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+// Classe CSS permettant de rendre le calendrier réactif (Source: https://stackoverflow.com/questions/60579288/fullcalendar-header-buttons-not-responsive)
+@media screen and (max-width:767px) { .fc-toolbar.fc-header-toolbar {font-size: 60%}}

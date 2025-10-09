@@ -1,0 +1,25 @@
+.fc-daygrid-day-number, .fc-col-header-cell-cushion{
+    color: white;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-top{
+    background-color: rgba(171, 171, 171, 0.56);
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: rgba(255, 255, 255, 0);
+}
+.fc-daygrid-day, .fc .fc-daygrid-day.fc-day-today{
+    background-color: rgba(61, 61, 61, 0.5);
+}
+
+.fc-col-header{
+    background-color: rgba(56, 56, 56, 0.42);
+}
+
+#descCalendrier{
+    position: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
